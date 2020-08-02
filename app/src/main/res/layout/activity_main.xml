@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:gravity="center">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="6dp"
+            android:paddingTop="6dp"
+            android:paddingRight="6dp"
+            android:paddingBottom="6dp">
+
+            <TextView
+                android:id="@+id/txtResult"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_span="7"
+                android:gravity="center|right"
+                android:textColor="#FFFFFF"
+                android:textSize="80sp"
+                android:textStyle="normal" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:minWidth="90dp"
+            android:minHeight="90dp"
+            android:padding="6dp">
+
+            <Button
+                android:id="@+id/btnAc"
+                style="@style/btnFunction"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="calcEvent"
+                android:text="@string/calc_ac" />
+
+            <Space
+                style="@style/separatorStyle"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/btnCambioSigno"
+                style="@style/btnFunction"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="calcEvent"
+                android:text="@string/calc_add_minus" />
+
+            <Space
+                style="@style/separatorStyle"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/btnMod"
+                style="@style/btnFunction"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="opeClickEvent"
+                android:text="@string/calc_perc" />
+
+            <Space
+                style="@style/separatorStyle"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/btnDiv"
+                style="@style/operation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="opeClickEvent"
+                android:text="@string/calc_div" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:minWidth="90dp"
+            android:minHeight="90dp"
+            android:padding="6dp">
+
+            <Button
+                android:id="@+id/number7"
+                style="@style/numberStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="numberClickEvent"
+                android:text="@string/calc_seven" />
+
+            <Space
+                style="@style/separatorStyle"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/number8"
+                style="@style/numberStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="numberClickEvent"
+                android:text="@string/calc_eight" />
+
+            <Space
+                style="@style/separatorStyle"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/number9"
+                style="@style/numberStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="numberClickEvent"
+                android:text="@string/calc_nine" />
+
+            <Space
+                style="@style/separatorStyle"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/btnMult"
+                style="@style/operation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="opeClickEvent"
+                android:text="@string/calc_mult" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:minWidth="90dp"
+            android:minHeight="90dp"
+            android:padding="6dp">
+
+            <Button
+                android:id="@+id/number4"
+                style="@style/numberStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="numberClickEvent"
+                android:text="@string/calc_four" />
+
+            <Space
+                style="@style/separatorStyle"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/number5"
+                style="@style/numberStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="numberClickEvent"
+                android:text="@string/calc_five" />
+
+            <Space
+                style="@style/separatorStyle"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/number6"
+                style="@style/numberStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="numberClickEvent"
+                android:text="@string/calc_six" />
+
+            <Space
+                style="@style/separatorStyle"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/btnMinus"
+                style="@style/operation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="opeClickEvent"
+                android:text="@string/calc_minus" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:minWidth="90dp"
+            android:minHeight="90dp"
+            android:padding="6dp">
+
+            <Button
+                android:id="@+id/number1"
+                style="@style/numberStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="numberClickEvent"
+                android:text="@string/calc_one" />
+
+            <Space
+                style="@style/separatorStyle"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/number2"
+                style="@style/numberStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="numberClickEvent"
+                android:text="@string/calc_two" />
+
+            <Space
+                style="@style/separatorStyle"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/number3"
+                style="@style/numberStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="numberClickEvent"
+                android:text="@string/calc_three" />
+
+            <Space
+                style="@style/separatorStyle"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/btnAdd"
+                style="@style/operation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="opeClickEvent"
+                android:text="@string/calc_add" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minWidth="90dp"
+            android:minHeight="90dp"
+            android:padding="6dp">
+
+            <Button
+                android:id="@+id/number0"
+                style="@style/numberStyle_zero"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_span="3"
+                android:onClick="numberClickEvent"
+                android:text="@string/calc_zero" />
+
+            <Space
+                style="@style/separatorStyle"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/btnDecimal"
+                style="@style/numberStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="numberClickEvent"
+                android:text="@string/calc_point" />
+
+            <Space
+                style="@style/separatorStyle"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/btnResult"
+                style="@style/result"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="calcEvent"
+                android:text="@string/calc_result" />
+        </TableRow>
+
+    </TableLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

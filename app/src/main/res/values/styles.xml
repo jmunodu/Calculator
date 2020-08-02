@@ -1,0 +1,55 @@
+<resources>
+    <!-- Base app`lication theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="numberStyle" >
+        <item name="android:gravity">center</item>
+        <item name="android:padding">6dp</item>
+        <item name="android:background">@drawable/btn_number</item>
+        <item name="android:textSize">24dp</item>
+        <item name="android:textColor">@color/fontNumberColor</item>
+    </style>
+
+    <style name="numberStyle_zero" >
+        <item name="android:gravity">center</item>
+        <item name="android:padding">6dp</item>
+        <item name="android:background">@drawable/btn_number_zero</item>
+        <item name="android:textSize">24dp</item>
+        <item name="android:textColor">@color/fontNumberColor</item>
+    </style>
+
+    <style name="operation" >
+        <item name="android:gravity">center</item>
+        <item name="android:padding">6dp</item>
+        <item name="android:background">@drawable/btn_operation</item>
+        <item name="android:textSize">24dp</item>
+        <item name="android:textColor">@color/fontNumberColor</item>
+    </style>
+
+    <style name="result" >
+        <item name="android:gravity">center</item>
+        <item name="android:padding">6dp</item>
+        <item name="android:background">@drawable/btn_result</item>
+        <item name="android:textSize">24dp</item>
+        <item name="android:textColor">@color/fontNumberColor</item>
+    </style>
+
+    <style name="btnFunction" >
+        <item name="android:gravity">center</item>
+        <item name="android:padding">6dp</item>
+        <item name="android:background">@drawable/btn_function</item>
+        <item name="android:textSize">24dp</item>
+        <item name="android:textColor">@color/fontNumberColorFunction</item>
+    </style>
+
+    <style name="separatorStyle">
+        <item name="android:layout_width">10dp</item>
+    </style>
+
+
+</resources>

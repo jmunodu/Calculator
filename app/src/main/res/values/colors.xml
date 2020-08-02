@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#000000</color>
+
+    <color name="fontNumberColor">#FFFFFF</color>
+    <color name="fontNumberColorFunction">#000000</color>
+
+    <color name="numberColor">#333333</color>
+    <color name="numberColorPressed">#818080</color>
+
+    <color name="btnOperation">#F1A33C</color>
+    <color name="btnOperationPressed">#F3C995</color>
+
+    <color name="btnFuntion">#A6A6A6</color>
+    <color name="btnFuntionPressed">#EAEAEA</color>
+
+    <color name="btnResult">#F3C995</color>
+    <color name="btnResultPressed">#FBEAD5</color>
+</resources>
